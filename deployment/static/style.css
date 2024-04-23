@@ -1,0 +1,70 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Container styles */
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Form grid styles */
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  /* Form input styles */
+  .form-grid label,
+  .form-grid input,
+  .form-grid button {
+    width: calc(100% - 10px);
+  }
+  
+  /* Button styles */
+  button {
+    grid-column: span 2;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Prediction styles */
+  .prediction {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .prediction p {
+    font-size: 17px;
+  }
+  

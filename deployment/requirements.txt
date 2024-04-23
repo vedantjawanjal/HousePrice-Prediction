@@ -1,0 +1,4 @@
+Flask
+numpy
+Pandas
+Scikit-learn==1.0.2

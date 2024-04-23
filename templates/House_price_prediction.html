@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Washington House Price Prediction</title>
+  <link ref="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Audiowide">
+</head>
+
+<body>
+    <header>
+           <h1 style="text-align:center;">Washington House Price Prediction</h1>
+    </header>
+
+ <form action="/predict" method="post" style="width: 450px; margin: 0 auto;padding: 20px;background-color: #fff; border: 2px solid #ccc;">
+	<input type="number" name="bedrooms" placeholder="Number of bedrooms in house" style="  width: 100%;  padding: 5px;  margin-bottom: 10px;  border: 1px solid #ccc;  font-size:17px;">
+	<input type="number" name="bathrooms" step="0.01" placeholder="Number of bathrooms in house " style="  width: 100%;  padding: 5px;  margin-bottom: 10px;  border: 1px solid #ccc;  font-size:17px;">
+	<input type="number" name="sqft_living" placeholder="Area of house in square feet" style="  width: 100%;  padding: 5px;  margin-bottom: 10px;  border: 1px solid #ccc;  font-size:17px;">
+	<input type="number" name="sqft_lot" placeholder="Area of land on which house is built in square feet" style="  width: 100%;  padding: 5px;  margin-bottom: 10px;  border: 1px solid #ccc;  font-size:17px;">
+	<input type="number" name="floors" step="0.001" placeholder="Number of floors built in house " style="  width: 100%;  padding: 5px;  margin-bottom: 10px;  border: 1px solid #ccc;  font-size:17px;">
+	<input type="text" name="waterfront" placeholder="Waterfront (Yes/No)" style="  width: 100%;  padding: 5px;  margin-bottom: 10px;  border: 1px solid #ccc;  font-size:17px;">
+	<input type="number" name="view" placeholder="Number of views propert had" style="  width: 100%;  padding: 5px;  margin-bottom: 10px;  border: 1px solid #ccc;  font-size:17px;">
+	<input type="number" name="condition" placeholder="Number of star based on condition (1 to 5)" style="  width: 100%;  padding: 5px;  margin-bottom: 10px;  border: 1px solid #ccc;  font-size:17px;">
+	<input type="number" name="sqft_basement" placeholder="Area of the basement in square feets" style="  width: 100%;  padding: 5px;  margin-bottom: 10px;  border: 1px solid #ccc;  font-size:17px;">
+	<input type="number" name="yr_built" placeholder="Year in which house was built" style="  width: 100%;  padding: 5px;  margin-bottom: 10px;  border: 1px solid #ccc;  font-size:17px;">
+	<input type="number" name="yr_renovated" placeholder="Year in which house was renovated" style="  width: 100%;  padding: 5px;  margin-bottom: 10px;  border: 1px solid #ccc;  font-size:17px;">
+	<input type="number" name="statezip" placeholder="Zipcode for city (5 digits)" style="  width: 100%;  padding: 5px;  margin-bottom: 10px;  border: 1px solid #ccc;  font-size:17px;">
+
+	
+	<button type="submit">Make a prediction</button>
+ </form>
+
+<div class="prediction">
+     <p style="font-size: 17px;">The predicted price of House is :  {{result}}</p>
+</div>
+
+</body>
+</html>
+
+
